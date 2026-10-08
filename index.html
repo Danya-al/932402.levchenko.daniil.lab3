@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О себе — Кулинар и фуд-блогер</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+  h1 {
+    font-size: 2.4rem;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.35;
+  }
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>Даниил Левченко</h1>
+        <p>О себе &mdash; кулинар и фуд-блогер</p>
+        <figure>
+            <img src="images/avatar.jpg" alt="Логотип кулинарного блога с изображением тарелки, вилки и ложки"
+                width="200" height="200" style="object-fit: cover;">
+        </figure>
+    </header>
+
+    <main>
+        <section>
+            <h2>Навыки</h2>
+            <ul>
+                <li>Адаптация традиционных рецептов кухонь мира для домашней готовки.</li>
+                <li>Составление вкусного и сбалансированного меню на каждый день.</li>
+                <li>Фуд-стилистика и выстраивание аппетитной композиции в кадре.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Проекты</h2>
+            <ol>
+                <li class="project-card"><strong>Овсяный блин с арахисовой пастой и бананом:</strong> быстрый, сытный и
+                    полезный завтрак за 10 минут.</li>
+                <li class="project-card"><strong>Кофеиновый шот кодера:</strong> авторский рецепт кофе с темным
+                    шоколадом, чтобы не уснуть за дебаггингом сложного алгоритма на C++.</li>
+                <li class="project-card"><strong>Итальянская паста Неаполитано:</strong> домашняя паста с соусом из
+                    свежих томатов и базиликом.</li>
+            </ol>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Любимая кухня</h2>
+        <p>Русская &mdash; сытность и глубокая связь с традициями.</p>
+    </aside>
+
+    <section>
+        <h2>Обратная связь</h2>
+        <form>
+            <p>
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Иван Иванов">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+            </p>
+            <p>
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" placeholder="Напишите ваш вопрос" rows="4"></textarea>
+            </p>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <footer>
+    <p>&copy; Левченко Даниил, 2026</p>
+    <p>Рецепты и вдохновение: <a href="https://eda.ru" target="_blank" rel="noopener">eda.ru</a></p>
+    </footer>
+</body>
+
+</html>

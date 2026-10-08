@@ -1,0 +1,156 @@
+:root {
+    --cream: #f5efe1;
+  --terracotta: #c1440e;
+  --brown: #8b4513;
+  --text: #4a3728;
+  --card-bg: #efdfc4;
+  --focus: #e8c547;
+}
+
+body {
+    background-color: var(--cream);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0;
+  padding: 24px;
+}
+
+h1,h2 {
+  color: var(--brown);
+}
+
+header {
+  border-bottom: 3px solid var(--terracotta);
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  border-radius: 12px;
+}
+
+a {
+  color: var(--terracotta);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--brown);
+}
+
+a:hover {
+  color: var(--brown);
+  text-decoration: none;
+}
+
+ol {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.project-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: #e8c9a0;
+  transition: filter 0.35s ease, transform 0.35s ease;
+}
+
+.project-card:hover::before {
+  filter: blur(10px);
+  transform: scale(1.00);
+}
+
+form p {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+  color: var(--brown);
+}
+
+input, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 8px 10px;
+  border: 1px solid var(--brown);
+  border-radius: 6px;
+  background-color: #fffdf8;
+  color: var(--text);
+  width: 320px;
+  max-width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+button {
+  background-color: var(--terracotta);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 22px;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+button:hover {
+  background-color: var(--brown);
+}
+
+button:focus {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+button:active {
+  background-color: #8a2f08;
+  transform: translateY(1px);
+}
+
+aside {
+  background-color: var(--card-bg);
+  border-left: 5px solid var(--terracotta);
+  border-radius: 0 10px 10px 0;
+  padding: 14px 18px;
+  margin: 24px 0;
+}
+
+/* position: static — значение по умолчанию: элемент остаётся
+   в нормальном потоке документа, координаты top/right/bottom/left
+   и z-index на него не действуют */
+footer {
+  position: static;
+  border-top: 1px solid var(--brown);
+  padding-top: 14px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
