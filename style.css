@@ -36,6 +36,10 @@ figure img {
   border-radius: 12px;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   color: var(--terracotta);
   text-decoration: underline;
@@ -260,4 +264,41 @@ footer {
 
 ul li {
   margin-bottom: 6px;
+}
+
+/* ===== Адаптивность ===== */
+
+/* Планшеты: 2 колонки */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+
+/* Мобильные: 1 колонка */
+@media (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
 }
