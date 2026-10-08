@@ -7,16 +7,16 @@
     <title>О себе — Кулинар и фуд-блогер</title>
     <link rel="stylesheet" href="style.css">
     <style>
-  h1 {
-    font-size: 2.4rem;
-    line-height: 1.2;
-  }
+        h1 {
+            font-size: 2.4rem;
+            line-height: 1.2;
+        }
 
-  h2 {
-    font-size: 1.5rem;
-    line-height: 1.35;
-  }
-</style>
+        h2 {
+            font-size: 1.5rem;
+            line-height: 1.35;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,10 +27,19 @@
             <img src="images/avatar.jpg" alt="Логотип кулинарного блога с изображением тарелки, вилки и ложки"
                 width="200" height="200" style="object-fit: cover;">
         </figure>
+
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#dishes">Фирменные блюда</a></li>
+                <li><a href="#ingredients">Ингредиенты недели</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#contact">Обратная связь</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section>
+        <section id="skills">
             <h2>Навыки</h2>
             <ul>
                 <li>Адаптация традиционных рецептов кухонь мира для домашней готовки.</li>
@@ -38,7 +47,8 @@
                 <li>Фуд-стилистика и выстраивание аппетитной композиции в кадре.</li>
             </ul>
         </section>
-        <section>
+
+        <section id="projects">
             <h2>Проекты</h2>
             <ol>
                 <li class="project-card"><strong>Овсяный блин с арахисовой пастой и бананом:</strong> быстрый, сытный и
@@ -49,6 +59,92 @@
                     свежих томатов и базиликом.</li>
             </ol>
         </section>
+
+        <section id="dishes">
+            <h2>Фирменные блюда</h2>
+            <div class="cards">
+
+                <article class="card">
+                    <img src="images/oatmeal_crepe.webp" alt="Овсяный блин с арахисовой пастой и бананом"
+                        width="400" height="300">
+                    <h3>Овсяный блин</h3>
+                    <dl class="card-meta">
+                        <dt>Время</dt>
+                        <dd>10 мин</dd>
+                        <dt>Калорийность</dt>
+                        <dd>290 ккал</dd>
+                    </dl>
+                </article>
+
+                <article class="card">
+                    <img src="images/coffee_shot.jpg" alt="Чашка кофе с тёмным шоколадом"
+                        width="400" height="300">
+                    <h3>Кофеиновый шот кодера</h3>
+                    <dl class="card-meta">
+                        <dt>Время</dt>
+                        <dd>5 мин</dd>
+                        <dt>Калорийность</dt>
+                        <dd>120 ккал</dd>
+                    </dl>
+                </article>
+
+                <article class="card">
+                    <img src="images/pasta_neapolitano.webp" alt="Паста с томатным соусом и базиликом"
+                        width="400" height="300">
+                    <h3>Паста Неаполитано</h3>
+                    <dl class="card-meta">
+                        <dt>Время</dt>
+                        <dd>35 мин</dd>
+                        <dt>Калорийность</dt>
+                        <dd>610 ккал</dd>
+                    </dl>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="ingredients">
+            <h2>Ингредиенты недели</h2>
+            <div class="grid">
+
+                <article class="ingredient">
+                    <img src="images/pumkin.jpg" alt="Разрезанная тыква" width="300" height="300">
+                    <h3>Тыква</h3>
+                    <p>Бета-каротин для зрения и кожи, много клетчатки при низкой калорийности.</p>
+                </article>
+
+                <article class="ingredient">
+                    <img src="images/cranberry.jpg" alt="Свежая клюква" width="300" height="300">
+                    <h3>Клюква</h3>
+                    <p>Витамин C и антиоксиданты, поддерживает иммунитет в сезон простуд.</p>
+                </article>
+
+                <article class="ingredient">
+                    <img src="images/white_mushroom.webp" alt="Свежие белые грибы" width="300" height="300">
+                    <h3>Белые грибы</h3>
+                    <p>Растительный белок и витамины группы B, насыщенный вкус без мяса.</p>
+                </article>
+
+                <article class="ingredient">
+                    <img src="images/salmon.png" alt="Филе лосося" width="300" height="300">
+                    <h3>Лосось</h3>
+                    <p>Омега-3 и витамин D, лёгкий белок для восстановления после нагрузок.</p>
+                </article>
+
+                <article class="ingredient">
+                    <img src="images/nuts.jpg" alt="Очищенные грецкие орехи" width="300" height="300">
+                    <h3>Грецкий орех</h3>
+                    <p>Полезные жиры для работы мозга и сердца, долгое чувство сытости.</p>
+                </article>
+
+                <article class="ingredient">
+                    <img src="images/honey.jpg" alt="Банка мёда с деревянной ложкой" width="300" height="300">
+                    <h3>Мёд</h3>
+                    <p>Природный антисептик, заменяет сахар и смягчает горло при простуде.</p>
+                </article>
+
+            </div>
+        </section>
     </main>
 
     <aside>
@@ -56,7 +152,7 @@
         <p>Русская &mdash; сытность и глубокая связь с традициями.</p>
     </aside>
 
-    <section>
+    <section id="contact">
         <h2>Обратная связь</h2>
         <form>
             <p>
@@ -76,8 +172,8 @@
     </section>
 
     <footer>
-    <p>&copy; Левченко Даниил, 2026</p>
-    <p>Рецепты и вдохновение: <a href="https://eda.ru" target="_blank" rel="noopener">eda.ru</a></p>
+        <p>&copy; Левченко Даниил, 2026</p>
+        <p>Рецепты и вдохновение: <a href="https://eda.ru" target="_blank" rel="noopener">eda.ru</a></p>
     </footer>
 </body>
 
