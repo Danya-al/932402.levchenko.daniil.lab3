@@ -1,6 +1,6 @@
 :root {
   --cream: #f5efe1;
-  --terracotta: #c1440e;
+  --terracotta: #a93a0b;
   --brown: #8b4513;
   --text: #4a3728;
   --card-bg: #efdfc4;
@@ -53,8 +53,6 @@ a:hover {
   color: var(--brown);
   text-decoration: none;
 }
-
-/* ===== Навигация (Flexbox) ===== */
 
 nav {
   margin-top: 20px;
@@ -109,8 +107,6 @@ ol {
   filter: blur(10px);
 }
 
-/* ===== Карточки блюд (Flexbox) ===== */
-
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -154,8 +150,6 @@ ol {
 .card-meta dd {
   margin: 0 12px 0 0;
 }
-
-/* ===== Сетка ингредиентов (Grid) ===== */
 
 .grid {
   display: grid;
@@ -266,9 +260,6 @@ ul li {
   margin-bottom: 6px;
 }
 
-/* ===== Адаптивность ===== */
-
-/* Планшеты: 2 колонки */
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -279,7 +270,6 @@ ul li {
   }
 }
 
-/* Мобильные: 1 колонка */
 @media (max-width: 600px) {
   body {
     padding: 16px;
